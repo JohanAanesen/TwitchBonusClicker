@@ -1,0 +1,14 @@
+{
+    "name": "Twitch Bonus Points clicker",
+    "description": "Clicks the bonus points button when it appears",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["tabs"],
+    "host_permissions": ["*://*.twitch.tv/*"],
+    "content_scripts": [
+        {
+            "matches": ["*://*.twitch.tv/*"],
+            "js": ["twitch.js"]
+        }
+    ]
+}
