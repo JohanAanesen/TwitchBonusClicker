@@ -15,4 +15,5 @@ function myFunc() {
    
 };
 
-window.setTimeout(myFunc, 500);
+window.setTimeout(myFunc, 200)
+setInterval(myFunc, 5000);
