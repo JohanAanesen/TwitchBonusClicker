@@ -1,0 +1,14 @@
+{
+  "name": "Yr gusts in knots",
+  "description": "Displays gusts in knots",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["tabs"],
+  "host_permissions": ["*://*.yr.no/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.yr.no/nb/detaljer/tabell/*"],
+      "js": ["yr.js"]
+    }
+  ]
+}
