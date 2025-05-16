@@ -1,0 +1,14 @@
+{
+  "name": "Skyscreen auto refresh",
+  "description": "Refreshes page every 5 minutes",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["tabs"],
+  "host_permissions": ["*://*.skyscreen.vmh.media/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.skyscreen.vmh.media/*"],
+      "js": ["refresh.js"]
+    }
+  ]
+}
